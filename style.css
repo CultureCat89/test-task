@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+  /* overflow: hidden; */
+  width: 1600px;
+  height: 6102px;
+  margin: 0 auto;
+  background-color: #fef8f5;
+}
+
+.top {
+  height: 1185px;
+  margin-bottom: 105px;
+}
+
+.about_us {
+  width: 1171px;
+  height: 550px;
+  margin-left: 245px;
+  margin-bottom: 160px;
+}
+
+.how_to_apply {
+  width: 1232px;
+  height: 679px;
+  margin-left: auto;
+  margin-right: 240px;
+  margin-bottom: 120px;
+}
+
+.faq {
+  width: 1360px;
+  height: 1500px;
+  margin-left: 240px;
+  margin-bottom: 177px;
+}
+
+.testi {
+  width: 1680px;
+  height: 454px;
+  margin-left: 240px;
+  margin-bottom: 160px;
+}
+
+.footer {
+  width: 1400px;
+  height: 920px;
+  margin-bottom: 92px;
+}
+
+.top,
+.about_us,
+.how_to_apply,
+.faq,
+.testi,
+.footer {
+  border: 1px solid #000;
+}
+
