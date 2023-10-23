@@ -11,7 +11,7 @@
   flex-direction: column;
   /* position: relative; */
   /* overflow: hidden; */
-  width: 1600px;
+  max-width: 1600px;
   height: 6102px;
   margin: 0 auto;
   background-color: #fef8f5;
@@ -20,16 +20,48 @@
 .top {
   height: 1185px;
   margin-bottom: 105px;
+  background-image: url(assets/img/top.png);
+}
+
+.top_header {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+  width: 100%;
+}
+
+.top_header_nav-list ul {
+  display: flex;
+  height: 60px;
+  gap: 40px;
+  list-style-type: none;
 }
 
 .about_us {
+  display: flex;
+  justify-content: space-between;
   width: 1171px;
   height: 550px;
   margin-left: 245px;
   margin-bottom: 160px;
 }
 
-.how_to_apply {
+.about_us_content {
+  margin-top: auto;
+  width: 570px;
+  height: 476px;
+}
+
+.about_us_bg {
+  margin-bottom: auto;
+  width: 575px;
+  height: 480px;
+  background-image: url(assets/img/about_Illustration.png);
+}
+
+.how_to {
+  display: flex;
   width: 1232px;
   height: 679px;
   margin-left: auto;
@@ -37,11 +69,23 @@
   margin-bottom: 120px;
 }
 
+.how_to_bg {
+  width: 720px;
+  height: 100%;
+  background-image: url(assets/img/howto_illustration.png);
+}
+
+.how_to_content {
+  width: 512px;
+  height: 100%;
+}
+
 .faq {
   width: 1360px;
   height: 1500px;
   margin-left: 240px;
   margin-bottom: 177px;
+  background: url(assets/img/faq.png) no-repeat right;
 }
 
 .testi {
@@ -55,11 +99,19 @@
   width: 1400px;
   height: 920px;
   margin-bottom: 92px;
+  background: url(assets/img/footer.png) no-repeat;
 }
 
 .top,
+.top_header,
+.top_header_logo,
+.top_header_nav-list,
 .about_us,
-.how_to_apply,
+.about_us_content,
+.about_us_bg,
+.how_to,
+.how_to_bg,
+.how_to_content,
 .faq,
 .testi,
 .footer {
