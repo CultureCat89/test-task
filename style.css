@@ -121,7 +121,8 @@
 
 .about_us_content h2,
 .how_to_content h2,
-.faq_content_title h2 {
+.faq_content_title h2,
+.testi_content_title h2 {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
   color: #ee4d47;
@@ -167,6 +168,10 @@
   background-image: url(assets/img/about_Illustration.png);
 }
 
+/*******************************
+**********HOW TO APPLY********** 
+********************************/
+
 .how_to {
   display: flex;
   justify-content: space-between;
@@ -189,6 +194,10 @@
 .how_to_content_description {
   width: 455px;
 }
+
+/*******************************
+**************FAQ*************** 
+********************************/
 
 .faq {
   width: 1360px;
@@ -312,12 +321,102 @@
   margin-bottom: 40px;
 }
 
+/*******************************
+*******OUR AWESOME CLIENTS****** 
+********************************/
+
 .testi {
-  width: 1680px;
+  display: flex;
+  width: 1600px;
   height: 454px;
-  margin-left: 240px;
+  margin-left: 16vw;
   margin-bottom: 160px;
 }
+
+.testi_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 294px;
+}
+
+.testi_content_title {
+  position: relative;
+}
+
+.testi_content_description {
+  width: 300px;
+  height: 200px;
+  color: #402B2B;
+  font-family: 'DM Serif Display', serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.testi_clients {
+  width: 1300px;
+  margin-left: 100px;
+}
+
+.testi_clients_panel {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  width: 89.5px;
+}
+
+.testi_clients_window {
+  display: flex;
+  gap: 20px;
+  height: 360px;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 420px;
+  height: 360px;
+  padding: 60px 52px 40px 48px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.10);
+}
+
+.opacity-add {
+  opacity: 0.5;
+}
+
+.client_description {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.client_data {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 60px;
+  width: 240px;
+  color: #402B2B;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+/*******************************
+*************FOOTER************* 
+********************************/
 
 .footer {
   max-width: 1400px;
@@ -346,10 +445,17 @@
 
 .faq,
 .faq_content,
+.faq_content h2,
 .faq_content_title,
 .faq_content_description,
 
 .testi,
+.testi_content,
+.testi_content h2,
+.testi_content_title,
+.testi_content_description,
+.testi_clients,
+
 .footer {
   /* border: 1px solid #000; */
 }
@@ -377,7 +483,8 @@
     margin-left: 15vw;
   }
 
-  .faq {
+  .faq,
+  .testi {
     margin-left: 10vw;
   }
 }
@@ -392,6 +499,10 @@
   .how_to {
     width: 500px;
     margin: 0 auto 100px;
+  }
+
+  .how_to {
+    height: 370px;
   }
 
   .about_us_content_question {
@@ -419,6 +530,28 @@
 
   .load_more {
     margin: 23px auto 0;
+  }
+
+  .testi {
+    margin: 100px auto;
+    height: 800px;
+    flex-direction: column;
+  }
+
+  .testi,
+  .testi_clients,
+  .testi_clients_panel {
+    width: 360px;
+  }
+
+  .testi_clients {
+    margin: 50px 0 0;
+    overflow: hidden;
+  }
+
+  .testi_clients_window {
+    gap: 0;
+
   }
 
 }
