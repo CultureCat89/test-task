@@ -12,8 +12,8 @@
   /* position: relative; */
   overflow: hidden;
   max-width: 1600px;
-  height: 6102px;
-  margin: 0 auto;
+  min-height: 6102px;
+  margin: 0 100px;
   background-color: #fef8f5;
 }
 
@@ -425,39 +425,122 @@
   background: url(assets/img/footer.png) no-repeat;
 }
 
-.top,
-.top_header,
-.top_header_logo,
-.top_header_nav-list,
-.top_content_text,
+.footer_form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1025px;
+  height: 440px;
+  margin: 60px 0 0 240px;
+}
 
-.about_us,
-.about_us_content,
-.about_us_content h2,
-.about_us_content_description,
-.about_us_bg,
+.footer_form_description {
+  margin-top: 220px;
+  padding: 10px 0 10px 40px;
+  width: 380px;
+  height: 160px;
+  border: 0px solid #ee4d47;
+  border-left-width: 10px;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
 
-.how_to,
-.how_to_bg,
-.how_to_content,
-.how_to_content h2,
-.how_to_content_description,
+.footer_form_data {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 550px;
+  background-color: #fff;
+  padding: 52px 75px;
+}
 
-.faq,
-.faq_content,
-.faq_content h2,
-.faq_content_title,
-.faq_content_description,
+.footer_form_data_name,
+.footer_form_data_email {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 108px;
+}
 
-.testi,
-.testi_content,
-.testi_content h2,
-.testi_content_title,
-.testi_content_description,
-.testi_clients,
+.label_data {
+  height: 38px;
+  color: #402B2B;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 40px;
+}
 
-.footer {
-  /* border: 1px solid #000; */
+.input_data {
+  width: 400px;
+  height: 60px;
+  padding: 11px 40px;
+  border-radius: 5px;
+  border: 1px solid rgba(238, 77, 71, 0.50);
+  color: #402B2B;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+.input_data:focus {
+  font-weight: 700;
+  border-radius: 5px;
+  border: 2px solid #EE4D47;
+  box-shadow: 0px 20px 40px 0px rgba(238, 77, 71, 0.20);
+}
+
+.footer_content_btn {
+  width: 220px;
+  height: 60px;
+}
+
+.footer_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 41px;
+  margin: 169px 200px 170px 240px;
+}
+
+.footer_list_nav {
+  display: flex;
+  justify-content: space-between;
+  width: 368px;
+  height: 19px;
+  list-style-type: none;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  margin-left: 240px;
+  margin-right: 135px;
+  color: #402B2B;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.social {
+  display: flex;
+  width: 170px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1500px) {
@@ -484,7 +567,10 @@
   }
 
   .faq,
-  .testi {
+  .testi,
+  .footer_form,
+  .footer_list,
+  .information {
     margin-left: 10vw;
   }
 }
@@ -541,7 +627,7 @@
   .testi,
   .testi_clients,
   .testi_clients_panel {
-    width: 360px;
+    width: 340px;
   }
 
   .testi_clients {
@@ -551,7 +637,38 @@
 
   .testi_clients_window {
     gap: 0;
+  }
 
+  .footer {
+    height: 1000px;
+  } 
+
+  .footer_form {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 550px;
+    height: 800px;
+    margin: 0 auto;
+  }
+
+  .footer_form_description {
+    width: 100%;
+    height: 60px;
+  }
+
+  .footer_list,
+  .information {
+    margin: 0 auto;
+    width: 550px;
+  }
+
+  .footer-bg {
+    padding-top: 30px;
+    height: 100px;
+    width: 100%;
+    background-color: #0F264C;
+    margin-bottom: 50px;
   }
 
 }
